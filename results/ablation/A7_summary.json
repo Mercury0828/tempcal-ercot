@@ -1,0 +1,195 @@
+{
+ "note": "Amendment A7, additional post-test analysis (not confirmatory)",
+ "A7.1": {
+  "(a) S-CONF": {
+   "ERCOT_h1_24": {
+    "cold": {
+     "n": 640,
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243,
+     "n_infinite": 0
+    },
+    "ALL": {
+     "n": 26298,
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832,
+     "n_infinite": 0
+    }
+   },
+   "zones_cold_h1_48_coverage": 0.7078754578754579,
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "guard_binding_share_cold": null
+  },
+  "(b) S-CONF + guard": {
+   "ERCOT_h1_24": {
+    "cold": {
+     "n": 640,
+     "coverage": 0.746875,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.0174532112816,
+     "n_infinite": 0
+    },
+    "ALL": {
+     "n": 26298,
+     "coverage": 0.8933759221233554,
+     "median_width_pct": 12.67437870609738,
+     "mean_IS_pct": 18.42637776406083,
+     "n_infinite": 0
+    }
+   },
+   "zones_cold_h1_48_coverage": 0.710927960927961,
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "guard_binding_share_cold": 0.06269196025293586
+  },
+  "(c) TEMPCAL, no guard": {
+   "ERCOT_h1_24": {
+    "cold": {
+     "n": 640,
+     "coverage": 0.884375,
+     "median_width_pct": 30.097244485279408,
+     "mean_IS_pct": 53.25001666424778,
+     "n_infinite": 0
+    },
+    "ALL": {
+     "n": 26298,
+     "coverage": 0.8957715415620959,
+     "median_width_pct": 12.377931493353724,
+     "mean_IS_pct": 18.07359137697113,
+     "n_infinite": 0
+    }
+   },
+   "zones_cold_h1_48_coverage": 0.8773911273911273,
+   "cells_pass": 38,
+   "cells_assessable": 51,
+   "guard_binding_share_cold": null
+  },
+  "(d) GUARDED": {
+   "ERCOT_h1_24": {
+    "cold": {
+     "n": 640,
+     "coverage": 0.884375,
+     "median_width_pct": 30.097244485279408,
+     "mean_IS_pct": 53.25001666424778,
+     "n_infinite": 0
+    },
+    "ALL": {
+     "n": 26298,
+     "coverage": 0.8963419271427485,
+     "median_width_pct": 12.447140818088656,
+     "mean_IS_pct": 18.080721132525216,
+     "n_infinite": 0
+    }
+   },
+   "zones_cold_h1_48_coverage": 0.8774928774928775,
+   "cells_pass": 42,
+   "cells_assessable": 51,
+   "guard_binding_share_cold": null
+  }
+ },
+ "A7.2": {
+  "(a) S-CONF": {
+   "cold": {
+    "n": 621,
+    "coverage": 0.677938808373591,
+    "median_width_pct": 21.564828506993265,
+    "mean_IS_pct": 94.66645496395391,
+    "n_infinite": 0
+   },
+   "ALL": {
+    "n": 26280,
+    "coverage": 0.8926940639269406,
+    "median_width_pct": 16.67346041719827,
+    "mean_IS_pct": 24.507735443422145,
+    "n_infinite": 0
+   },
+   "h_range": [
+    19,
+    43
+   ]
+  },
+  "(c) TEMPCAL, no guard": {
+   "cold": {
+    "n": 621,
+    "coverage": 0.8856682769726248,
+    "median_width_pct": 61.248604911786316,
+    "mean_IS_pct": 75.87468933487735,
+    "n_infinite": 0
+   },
+   "ALL": {
+    "n": 26280,
+    "coverage": 0.8952054794520548,
+    "median_width_pct": 16.17130757987091,
+    "mean_IS_pct": 23.80207265479263,
+    "n_infinite": 0
+   },
+   "h_range": [
+    19,
+    43
+   ]
+  },
+  "(d) GUARDED": {
+   "cold": {
+    "n": 621,
+    "coverage": 0.8856682769726248,
+    "median_width_pct": 61.248604911786316,
+    "mean_IS_pct": 75.87468933487735,
+    "n_infinite": 0
+   },
+   "ALL": {
+    "n": 26280,
+    "coverage": 0.8953196347031963,
+    "median_width_pct": 16.21336856695588,
+    "mean_IS_pct": 23.794460070289748,
+    "n_infinite": 0
+   },
+   "h_range": [
+    19,
+    43
+   ]
+  },
+  "ERCOT forecast + S-CONF": {
+   "cold": {
+    "n": 621,
+    "coverage": 0.7520128824476651,
+    "median_width_pct": 15.162233275315309,
+    "mean_IS_pct": 46.185484780377834,
+    "n_infinite": 0
+   },
+   "ALL": {
+    "n": 26280,
+    "coverage": 0.8929604261796042,
+    "median_width_pct": 12.276077077641503,
+    "mean_IS_pct": 18.706366363794473,
+    "n_infinite": 0
+   },
+   "h_range": [
+    19,
+    43
+   ]
+  },
+  "ERCOT forecast + TEMPCAL": {
+   "cold": {
+    "n": 621,
+    "coverage": 0.8679549114331723,
+    "median_width_pct": 24.009350633777046,
+    "mean_IS_pct": 43.174312163952585,
+    "n_infinite": 0
+   },
+   "ALL": {
+    "n": 26280,
+    "coverage": 0.892503805175038,
+    "median_width_pct": 12.22436674197641,
+    "mean_IS_pct": 18.677021434568907,
+    "n_infinite": 0
+   },
+   "h_range": [
+    19,
+    43
+   ]
+  }
+ }
+}

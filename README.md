@@ -55,6 +55,7 @@ python -m src.base.b6
 STORMCAL_TEST_OPEN=1 python -m src.eval.run_confirm test
 STORMCAL_TEST_OPEN=1 python -m src.eval.q3_report
 STORMCAL_TEST_OPEN=1 python -m src.eval.run_q5
+STORMCAL_TEST_OPEN=1 python -m src.eval.ablation      # guard ablation and next-calendar-day view
 STORMCAL_TEST_OPEN=1 python scripts/e_exploratory.py
 STORMCAL_TEST_OPEN=1 python -m src.eval.figdata
 python scripts/make_figures.py && python scripts/make_tables.py
@@ -76,6 +77,7 @@ Paths default to `data/` and `runs_out/` inside the repository and can be change
 | Storm coverage | `results/confirm/test/Q4_events.csv` |
 | Table IV (sensitivity) | `results/q5/Q5_summary.json` |
 | Exploratory analyses | `results/exploratory/` |
+| Guard ablation, next-calendar-day view | `results/ablation/A7_summary.json` |
 
 ## License
 

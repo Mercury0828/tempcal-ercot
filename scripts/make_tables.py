@@ -77,7 +77,7 @@ def tab2() -> None:
         v = float(e.loc[(arm, k), col])
         return r"$\infty$" if np.isinf(v) else f"{v:.{nd}f}"
     lines = [r"\begin{tabular}{@{}llcccc@{}}", r"\toprule",
-             r"Base forecast & Layer & Cold & All & Width & IS \\", r"\midrule"]
+             r"Base forecast & Layer & Cold & All & All width & All IS \\", r"\midrule"]
     for name, a0, a1 in rows:
         for lay, arm in (("S-CONF" if "CQR" not in a0 else "CQR", a0), ("TEMPCAL-CQR" if "CQR" in a0 else "TEMPCAL", a1)):
             if arm is None:
