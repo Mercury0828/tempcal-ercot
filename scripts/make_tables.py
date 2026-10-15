@@ -16,6 +16,7 @@ import pandas as pd
 REPO = Path(__file__).resolve().parents[1]
 RES = REPO / "results"
 OUT = REPO / "tables"
+EXTRA = REPO / "results" / "text_tables"  # source tables of numbers that the 6-page paper states in text (stations, sensitivity)
 SERIES = ["COAST", "EAST", "FWEST", "NORTH", "NCENT", "SOUTH", "SCENT", "WEST", "ERCOT"]
 BANDS = ["1-6", "7-24", "25-48"]
 
@@ -55,8 +56,7 @@ def tab1() -> None:
     gp, gn = count("GUARDED")
     sp, sn = count("S-CONF_rel")
     lines += [r"\midrule",
-              rf"\multicolumn{{7}}{{@{{}}p{{0.95\columnwidth}}@{{}}}}{{\footnotesize Cells at or above floor: TEMPCAL {gp}/{gn}; "
-              rf"S-CONF {sp}/{sn}.}} \\",
+              rf"\multicolumn{{7}}{{@{{}}p{{0.95\columnwidth}}@{{}}}}{{\footnotesize TEMPCAL reaches the floor in {gp} of {gn} cells and S-CONF in {sp} of {sn}.}} \\",
               r"\bottomrule", r"\end{tabular}"]
     (OUT / "tab1_cells.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -103,7 +103,7 @@ def tab0() -> None:
         st = ", ".join(STATIONS[s]) if s in STATIONS else "zones, load-weighted"
         lines.append(f"{s} & {st} & {ml[s] / 1000:.1f} & {th.loc[s, 'cold_p5']:.1f} & {th.loc[s, 'hot_p95']:.1f} \\\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
-    (OUT / "tab0_series.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (EXTRA / "tab0_series.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def tab3() -> None:
@@ -123,11 +123,12 @@ def tab3() -> None:
         lines.append(f"{lab} & {g['cells_pass']}/{g['cells_assessable']} & {c['coverage']:.3f} & "
                      f"{c['median_width_pct']:.1f} \\\\")
     lines += [r"\bottomrule", r"\end{tabular}"]
-    (OUT / "tab3_sensitivity.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (EXTRA / "tab3_sensitivity.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
+    EXTRA.mkdir(parents=True, exist_ok=True)
     tab0()
     tab1()
     tab2()

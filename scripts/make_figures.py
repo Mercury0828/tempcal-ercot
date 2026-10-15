@@ -103,8 +103,7 @@ def fig2() -> None:
         v = c2[(c2.arm == "GUARDED") & (c2.bin == k)].set_index("series").reindex(SERIES)["coverage"]
         ax.plot(xs + 0.2, v, ls="none", marker="D", ms=3.0, color=C_TEMP, label="Chronos-2+T, TEMPCAL")
         ax.axhline(0.9, color="black", lw=0.6, ls=":")
-        ax.set_ylabel("Coverage")
-        ax.text(0.01, 0.06, title, transform=ax.transAxes, fontsize=8, va="bottom")
+        ax.set_ylabel(f"{title}\ncoverage")  # panel name in the y label, clear of the grid lines
         ax.grid(axis="y", lw=0.3, color="#DDDDDD")
     axes[0].set_ylim(0.4, 1.0)
     axes[1].set_ylim(0.85, 0.95)
