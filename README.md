@@ -35,6 +35,32 @@ zip per model; unzip them into `runs_out/fc_cons/`.
 
 These data are public and remain under the terms of their providers.
 
+## Stations, temperature-bin thresholds and model checkpoints
+
+Zone temperatures (observed and GFS MOS forecast) are means over the airport stations below; the ERCOT system forecast
+weights the zone forecasts by each zone's mean share of ERCOT load, January 2018 to May 2021. Mean load and the cold
+(c_z, 5th percentile of December to February forecasts) and hot (w_z, 95th percentile of June to September forecasts)
+thresholds are computed on January 2018 to May 2021 (source: `src/wx/stations.py`, `scripts/make_tables.py`).
+
+| Series | Airport stations | Mean load (GW) | c_z (°F) | w_z (°F) |
+|---|---|---|---|---|
+| COAST | IAH, HOU, GLS | 12.2 | 41.9 | 90.9 |
+| EAST | TYR, LFK, CLL | 1.5 | 36.4 | 91.9 |
+| FWEST | MAF, INK | 3.4 | 30.3 | 97.7 |
+| NORTH | SPS, PRX | 0.8 | 31.0 | 93.8 |
+| NCENT | DFW, DAL, ACT | 13.5 | 34.3 | 96.0 |
+| SOUTH | CRP, BRO, LRD | 3.5 | 44.3 | 95.6 |
+| SCENT | AUS, SAT | 6.8 | 37.3 | 95.2 |
+| WEST | ABI, SJT | 1.2 | 31.0 | 96.5 |
+| ERCOT | zones, load-weighted | 43.1 | 38.2 | 93.7 |
+
+Foundation-model checkpoints (Hugging Face, pinned revisions enforced by the loaders in `src/fm/`):
+`amazon/chronos-bolt-base` @ 5d9f166d69f47aef3401367a7b842e78fe97b121, `amazon/chronos-2` @
+29ec3766d36d6f73f0696f85560a422f50e8498c, `google/timesfm-2.5-200m-pytorch` @ 1d952420fba87f3c6dee4f240de0f1a0fbc790e3,
+`Salesforce/moirai-2.0-R-small` @ 30f43ff08c8494f4943ae1521e9d4e94a0fbb389. Package versions used for the paper:
+chronos-forecasting 2.3.2, timesfm 3.0.2, uni2ts 2.0.0, LightGBM 4.7.0 (full lists in `requirements*.txt`); one NVIDIA
+RTX 4090.
+
 ## Reproducing the results
 
 ```bash
@@ -71,11 +97,11 @@ Paths default to `data/` and `runs_out/` inside the repository and can be change
 |---|---|
 | Fig. 1 (storm traces) | `scripts/make_figures.py` → `figs/fig1_storms.pdf` |
 | Fig. 2 (coverage by bin) | `results/confirm/test/Q1_cells.csv`, `Q2_cells.csv` |
-| Table II (extreme cells), paired gains | `results/confirm/test/Q2_cells.csv`, `Q2_decision.json` |
+| Table I (extreme cells), paired gains | `results/confirm/test/Q2_cells.csv`, `Q2_decision.json` |
 | Fig. 3 (coverage by winter) | `results/figdata/fig3_cold_by_winter.csv` |
-| Table III (base forecasts), matching rule | `results/confirm/test/Q3_ercot_exact.csv`, `Q3_matching.csv` |
+| Table II (base forecasts), matching rule | `results/confirm/test/Q3_ercot_exact.csv`, `Q3_matching.csv` |
 | Storm coverage | `results/confirm/test/Q4_events.csv` |
-| Table IV (sensitivity) | `results/q5/Q5_summary.json` |
+| Sensitivity (Section IV-E) | `results/q5/Q5_summary.json` |
 | Exploratory analyses | `results/exploratory/` |
 | Guard ablation, next-calendar-day view | `results/ablation/A7_summary.json` |
 

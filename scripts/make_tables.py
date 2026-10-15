@@ -1,7 +1,7 @@
 """Paper tables from frozen artifacts only. Writes paper/tables/{tab1_cells,tab2_baselines}.tex.
 
 Table I  Extreme-cell coverage of TEMPCAL (guarded) per series x horizon band, cold and hot bins, with floors marked;
-         last row = 'cells at or above floor' for TEMPCAL, S-CONF, and the exploratory severity-normalized variant.
+         last row = 'cells at or above floor' for TEMPCAL and S-CONF.
 Table II ERCOT h 1-24: coverage / median width / mean interval score for every base forecast with and without TEMPCAL.
 """
 from __future__ import annotations
@@ -54,10 +54,9 @@ def tab1() -> None:
         return int((e.status == "pass").sum()), int(e.status.isin(["pass", "fail"]).sum())
     gp, gn = count("GUARDED")
     sp, sn = count("S-CONF_rel")
-    e2 = json.loads((RES / "exploratory" / "E2_summary.json").read_text())
     lines += [r"\midrule",
               rf"\multicolumn{{7}}{{@{{}}p{{0.95\columnwidth}}@{{}}}}{{\footnotesize Cells at or above floor: TEMPCAL {gp}/{gn}; "
-              rf"S-CONF {sp}/{sn}; severity-scaled fallback (exploratory) {e2['cells_pass']}/{e2['cells_assessable']}.}} \\",
+              rf"S-CONF {sp}/{sn}.}} \\",
               r"\bottomrule", r"\end{tabular}"]
     (OUT / "tab1_cells.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

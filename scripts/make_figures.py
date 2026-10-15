@@ -71,7 +71,7 @@ def fig1() -> None:
         x = x[(x.series == "ERCOT") & (x.h <= 24)].copy()
         x["t"] = x["t_end_utc"].dt.tz_convert(TZ)
         rows[arm] = x
-    fig, axes = plt.subplots(2, 1, figsize=(COL, 92 * MM))
+    fig, axes = plt.subplots(2, 1, figsize=(COL, 80 * MM))
     _event_panel(axes[0], "2022-12-21", "2022-12-26", rows)
     _event_panel(axes[1], "2024-01-13", "2024-01-17", rows)
     axes[0].set_title("(a) Winter Storm Elliott, December 2022", loc="left")
@@ -91,7 +91,7 @@ def fig2() -> None:
     c2 = c2[c2.band == "1-24"]
     univ = {"B2:chronos-bolt": "Chronos-Bolt", "B2:chronos-2": "Chronos-2", "B2:timesfm-2.5": "TimesFM 2.5",
             "B2:moirai-2": "Moirai-2"}
-    fig, axes = plt.subplots(3, 1, figsize=(COL, 92 * MM), sharex=True)
+    fig, axes = plt.subplots(3, 1, figsize=(COL, 80 * MM), sharex=True)
     xs = np.arange(len(SERIES))
     for ax, k, title in zip(axes, ("cold", "mild", "hot"), ("Cold bin", "Mild bin", "Hot bin")):
         for j, (arm, lab) in enumerate(univ.items()):
@@ -108,7 +108,7 @@ def fig2() -> None:
         ax.grid(axis="y", lw=0.3, color="#DDDDDD")
     axes[0].set_ylim(0.4, 1.0)
     axes[1].set_ylim(0.85, 0.95)
-    axes[2].set_ylim(0.75, 1.0)
+    axes[2].set_ylim(0.7, 1.0)
     axes[-1].set_xticks(xs)
     axes[-1].set_xticklabels(SERIES, rotation=90)
     hh, ll = axes[0].get_legend_handles_labels()  # order: univariate S-CONF, Chronos-2+T S-CONF, TEMPCAL
@@ -137,7 +137,7 @@ def fig3() -> None:
     r.to_csv(RES / "figdata" / "fig3_cold_by_winter.csv", index=False, float_format="%.4f")
     wins = sorted(r.winter.unique())
     bands = ["1-6", "7-24", "25-48"]
-    fig, axes = plt.subplots(1, 2, figsize=(COL, 50 * MM), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(COL, 45 * MM), sharey=True)
     xs = np.arange(len(wins))
     mk = {"1-6": "o", "7-24": "s", "25-48": "^"}
     for ax, gname in zip(axes, ("ERCOT", "8 zones")):
