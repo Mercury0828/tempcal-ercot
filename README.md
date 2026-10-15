@@ -1,4 +1,4 @@
-# Temperature-Binned Conformal Calibration of Zero-Shot Foundation-Model Load Forecasts in Cold Weather on ERCOT
+# Cold-Weather Calibration of Foundation-Model Load Forecasts
 
 Code, processed public data and result tables for the paper of the same title by Jiachen Shen, Jian Shi, Zirui Tong
 and Zhu Han (University of Houston), submitted to the 2027 IEEE Texas Power and Energy Conference (TPEC).
