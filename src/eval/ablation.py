@@ -1,4 +1,4 @@
-"""Amendment A7 (prereg/): reviewer-requested re-analyses on stored forecasts; additional, not confirmatory.
+"""Amendment A7 (prereg/): additional post-test analyses on stored forecasts; not confirmatory.
 
 A7.1 guard ablation on Chronos-2+T (relative score): S-CONF, S-CONF + guard at GUARDED's fallback forecasts, TEMPCAL
 without guard, GUARDED. A7.2 next-calendar-day view (targets ending 01:00 .. 24:00 local of the day after issue).
