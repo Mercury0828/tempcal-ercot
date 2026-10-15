@@ -1,0 +1,8 @@
+arm,reason,n_keys
+S-CONF_rel,no finite forecast for the key,0
+TEMPCAL_rel,no finite forecast for the key,0
+GUARDED,no finite forecast for the key,0
+ALL,candidate keys,473148
+ALL,eligible keys,473148
+ALL,excluded: missing in every arm,0
+ALL,excluded: missing in some arm,0

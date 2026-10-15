@@ -1,0 +1,124 @@
+{
+ "adequacy_all_cells": false,
+ "failing_cells": [
+  {
+   "series": "COAST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8551020408163266,
+   "floor": 0.8728947629128425
+  },
+  {
+   "series": "EAST",
+   "band": "25-48",
+   "bin": "hot",
+   "coverage": 0.8691358024691358,
+   "floor": 0.8850928801500014
+  },
+  {
+   "series": "FWEST",
+   "band": "1-6",
+   "bin": "cold",
+   "coverage": 0.8209876543209876,
+   "floor": 0.8528595479208969
+  },
+  {
+   "series": "FWEST",
+   "band": "7-24",
+   "bin": "cold",
+   "coverage": 0.8537859007832899,
+   "floor": 0.8693414321815442
+  },
+  {
+   "series": "FWEST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8061224489795918,
+   "floor": 0.8728947629128425
+  },
+  {
+   "series": "NCENT",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8653295128939829,
+   "floor": 0.8772896650768661
+  },
+  {
+   "series": "NORTH",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.875,
+   "floor": 0.8783493649053891
+  },
+  {
+   "series": "SCENT",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8474295190713101,
+   "floor": 0.8755661111287389
+  },
+  {
+   "series": "WEST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8513011152416357,
+   "floor": 0.8741321631864464
+  }
+ ],
+ "unassessable": 3,
+ "empty": 0,
+ "improvement": {
+  "ERCOT": {
+   "block1": {
+    "diff": 0.17713365539452497,
+    "lo": 0.1091593346906182,
+    "hi": 0.2600427842113149,
+    "lcb95": 0.11700906932798544,
+    "n_undefined": 0,
+    "n_hours": 1242
+   },
+   "block7": {
+    "diff": 0.17713365539452497,
+    "lo": 0.10520777833740921,
+    "hi": 0.2525933908045977,
+    "lcb95": 0.11714487168747034,
+    "n_undefined": 0,
+    "n_hours": 1242
+   }
+  },
+  "8-zone aggregate": {
+   "block1": {
+    "diff": 0.1696174196174196,
+    "lo": 0.14205049948140597,
+    "hi": 0.20071886074517967,
+    "lcb95": 0.1452877674853982,
+    "n_undefined": 0,
+    "n_hours": 9828
+   },
+   "block7": {
+    "diff": 0.1696174196174196,
+    "lo": 0.14126949734199087,
+    "hi": 0.19882688036627513,
+    "lcb95": 0.14640352451067032,
+    "n_undefined": 0,
+    "n_hours": 9828
+   }
+  }
+ },
+ "improvement_pass": true,
+ "mild_width_ratio_h1_48": {
+  "COAST": 0.9880910842984976,
+  "EAST": 1.0090966371799068,
+  "FWEST": 0.969604068191767,
+  "NORTH": 0.9955935639944278,
+  "NCENT": 0.991510201439705,
+  "SOUTH": 0.9885051456914671,
+  "SCENT": 0.990708708337345,
+  "WEST": 0.9923570413042248,
+  "ERCOT": 0.9922838008331424
+ },
+ "efficiency_pass": true,
+ "H2": false,
+ "commit": "0477234",
+ "period": "test"
+}

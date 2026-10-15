@@ -1,0 +1,57 @@
+{
+ "qualifying_series": {
+  "chronos-bolt": [
+   "COAST",
+   "EAST",
+   "ERCOT",
+   "FWEST",
+   "NCENT",
+   "NORTH",
+   "SCENT",
+   "SOUTH",
+   "WEST"
+  ],
+  "chronos-2": [
+   "COAST",
+   "EAST",
+   "ERCOT",
+   "FWEST",
+   "NCENT",
+   "NORTH",
+   "SCENT",
+   "SOUTH",
+   "WEST"
+  ],
+  "timesfm-2.5": [
+   "COAST",
+   "EAST",
+   "ERCOT",
+   "FWEST",
+   "NCENT",
+   "NORTH",
+   "SCENT",
+   "SOUTH",
+   "WEST"
+  ],
+  "moirai-2": [
+   "COAST",
+   "EAST",
+   "ERCOT",
+   "FWEST",
+   "NCENT",
+   "NORTH",
+   "SCENT",
+   "SOUTH",
+   "WEST"
+  ]
+ },
+ "models_with_3plus": [
+  "chronos-bolt",
+  "chronos-2",
+  "timesfm-2.5",
+  "moirai-2"
+ ],
+ "H1": true,
+ "commit": "0477234",
+ "period": "test"
+}

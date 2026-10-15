@@ -1,0 +1,16 @@
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Base forecast & Layer & Cold & All & Width & IS \\
+\midrule
+Chronos-2+T & S-CONF & 0.744 & 0.893 & 12.7 & 18.4 \\
+ & TEMPCAL & 0.884 & 0.896 & 12.4 & 18.1 \\
+Chronos-2 & S-CONF & 0.652 & 0.898 & 19.2 & 28.3 \\
+ & TEMPCAL & 0.917 & 0.900 & 18.7 & 27.3 \\
+ERCOT & S-CONF & 0.766 & 0.895 & 10.3 & 16.0 \\
+ & TEMPCAL & 0.853 & 0.894 & 10.2 & 15.9 \\
+LightGBM & CQR & 0.438 & 0.876 & 32.1 & 43.9 \\
+LightGBM & TEMPCAL-CQR & 0.775 & 0.871 & 30.4 & $\infty$ \\
+Seasonal naive & S-CONF & 0.344 & 0.887 & 44.6 & 67.3 \\
+Chronos-2+T & ACI & 0.795 & 0.900 & 12.6 & $\infty$ \\
+\bottomrule
+\end{tabular}

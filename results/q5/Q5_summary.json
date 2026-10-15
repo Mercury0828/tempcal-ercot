@@ -1,0 +1,4356 @@
+{
+ "MAIN (W90, nmin100, p5/p95, alpha0.10, relative, Chronos-2+T)": {
+  "GUARDED": {
+   "cells_pass": 42,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8551020408163266,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8691358024691358,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8209876543209876,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8537859007832899,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8061224489795918,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8653295128939829,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.875,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8474295190713101,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8513011152416357,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.884375,
+     "median_width_pct": 30.097244485279408,
+     "mean_IS_pct": 53.25001666424778
+    },
+    "mild": {
+     "coverage": 0.894321636946339,
+     "median_width_pct": 12.377575355746497,
+     "mean_IS_pct": 17.363480519359108
+    },
+    "hot": {
+     "coverage": 0.9393939393939394,
+     "median_width_pct": 11.804992090764205,
+     "mean_IS_pct": 14.253336968081545
+    },
+    "ALL": {
+     "coverage": 0.8963419271427485,
+     "median_width_pct": 12.447140818088656,
+     "mean_IS_pct": 18.080721132525216
+    }
+   },
+   "mild_width_ratio_1_24_vs_MAIN (W90, nmin100, p5/p95, alpha0.10, relative, Chronos-2+T)|S-CONF": {
+    "COAST": 0.9894904859378486,
+    "EAST": 1.0034850480346869,
+    "FWEST": 0.9761900429998621,
+    "NORTH": 0.9976284063538996,
+    "NCENT": 0.9936345835700087,
+    "SOUTH": 1.0051140395388753,
+    "SCENT": 0.9989675421966661,
+    "WEST": 1.0022969712298098,
+    "ERCOT": 1.0019203817246554
+   },
+   "cold_gain_1_24_vs_MAIN (W90, nmin100, p5/p95, alpha0.10, relative, Chronos-2+T)|S-CONF": {
+    "COAST": 0.25,
+    "EAST": 0.08908045977011492,
+    "FWEST": 0.13394495412844043,
+    "NORTH": 0.041561712846347576,
+    "NCENT": 0.11668928086838537,
+    "SOUTH": 0.17495395948434622,
+    "SCENT": 0.18597560975609762,
+    "WEST": 0.20989761092150172,
+    "ERCOT": 0.140625
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5792207792207792,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6061224489795919,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7624521072796935,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7657232704402516,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8529411764705882,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7042553191489361,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6710963455149501,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7098765432098766,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7101827676240209,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8666666666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6448979591836734,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8191161356628982,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7431693989071039,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7335243553008596,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.830220713073005,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7552083333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8486842105263158,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6845238095238095,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5953565505804311,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6732673267326733,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5114503816793893,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6552511415525114,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6505576208178439,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243
+    },
+    "mild": {
+     "coverage": 0.8922672364204125,
+     "median_width_pct": 12.353851245585364,
+     "mean_IS_pct": 17.42995932474099
+    },
+    "hot": {
+     "coverage": 0.9848484848484849,
+     "median_width_pct": 18.81946498257456,
+     "mean_IS_pct": 18.572244195837364
+    },
+    "ALL": {
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832
+    }
+   }
+  },
+  "n_rows": {
+   "MAIN (W90, nmin100, p5/p95, alpha0.10, relative, Chronos-2+T)|S-CONF": 473148,
+   "MAIN (W90, nmin100, p5/p95, alpha0.10, relative, Chronos-2+T)|GUARDED": 473148
+  }
+ },
+ "W30": {
+  "GUARDED": {
+   "cells_pass": 41,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8571428571428571,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8726415094339622,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8654320987654321,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8209876543209876,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.85,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8612538540596094,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8524355300859598,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8658854166666666,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8723051409618574,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8780889621087314,
+     "floor": 0.8827796526620912
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.8859375,
+     "median_width_pct": 29.23311222564355,
+     "mean_IS_pct": 49.093939538134066
+    },
+    "mild": {
+     "coverage": 0.8919385323362643,
+     "median_width_pct": 12.188544303390852,
+     "mean_IS_pct": 17.31847287677548
+    },
+    "hot": {
+     "coverage": 0.9128787878787878,
+     "median_width_pct": 11.2794615796275,
+     "mean_IS_pct": 14.384731497091702
+    },
+    "ALL": {
+     "coverage": 0.8928435622480797,
+     "median_width_pct": 12.262521555190885,
+     "mean_IS_pct": 17.94451896553078
+    }
+   },
+   "mild_width_ratio_1_24_vs_W30|S-CONF": {
+    "COAST": 0.9937447426509873,
+    "EAST": 1.0128106926478038,
+    "FWEST": 0.9962316726737491,
+    "NORTH": 1.0029803793033607,
+    "NCENT": 0.9986337273701932,
+    "SOUTH": 1.0056289418212283,
+    "SCENT": 1.000405860635957,
+    "WEST": 1.0079499924630633,
+    "ERCOT": 1.0089905227964948
+   },
+   "cold_gain_1_24_vs_W30|S-CONF": {
+    "COAST": 0.23091603053435117,
+    "EAST": 0.08908045977011492,
+    "FWEST": 0.12660550458715603,
+    "NORTH": 0.052896725440806036,
+    "NCENT": 0.11397557666214375,
+    "SOUTH": 0.15837937384898715,
+    "SCENT": 0.1722560975609756,
+    "WEST": 0.17235494880546076,
+    "ERCOT": 0.140625
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8345323741007195,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6233766233766234,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5897959183673469,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7720306513409961,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7562893081761006,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.725531914893617,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.686046511627907,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7469135802469136,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7258485639686684,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.828125,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.636734693877551,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.7923946557040082,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8351063829787234,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7486338797814208,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7277936962750716,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8132427843803056,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7395833333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8157894736842105,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7123015873015873,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6218905472636815,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8345323741007195,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7004950495049505,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5725190839694656,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6986301369863014,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6617100371747212,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.7453125,
+     "median_width_pct": 17.30629477839124,
+     "mean_IS_pct": 56.416216767659066
+    },
+    "mild": {
+     "coverage": 0.8916509162626346,
+     "median_width_pct": 12.079939333433344,
+     "mean_IS_pct": 17.372389380800204
+    },
+    "hot": {
+     "coverage": 0.9522727272727273,
+     "median_width_pct": 13.837253464896952,
+     "mean_IS_pct": 15.264846253090484
+    },
+    "ALL": {
+     "coverage": 0.8911324055061222,
+     "median_width_pct": 12.237289235562265,
+     "mean_IS_pct": 18.216791715540978
+    }
+   }
+  },
+  "n_rows": {
+   "W30|S-CONF": 473148,
+   "W30|GUARDED": 473148
+  }
+ },
+ "W180": {
+  "GUARDED": {
+   "cells_pass": 42,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8551020408163266,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8703703703703703,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8148148148148148,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8537859007832899,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8061224489795918,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8653295128939829,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.875,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8474295190713101,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8513011152416357,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.884375,
+     "median_width_pct": 30.097244485279408,
+     "mean_IS_pct": 53.132141175488854
+    },
+    "mild": {
+     "coverage": 0.8972799737036733,
+     "median_width_pct": 12.251936970500243,
+     "mean_IS_pct": 17.578053347426675
+    },
+    "hot": {
+     "coverage": 0.9424242424242424,
+     "median_width_pct": 11.804992090764205,
+     "mean_IS_pct": 14.31426767868694
+    },
+    "ALL": {
+     "coverage": 0.8992318807513879,
+     "median_width_pct": 12.320355720784487,
+     "mean_IS_pct": 18.27949144641608
+    }
+   },
+   "mild_width_ratio_1_24_vs_W180|S-CONF": {
+    "COAST": 1.000139374242768,
+    "EAST": 1.0197301068206006,
+    "FWEST": 0.9785652982457105,
+    "NORTH": 1.0051097372686741,
+    "NCENT": 1.0034746261184564,
+    "SOUTH": 0.9970172873715573,
+    "SCENT": 0.9956680806843443,
+    "WEST": 1.005417481928003,
+    "ERCOT": 1.005167629244804
+   },
+   "cold_gain_1_24_vs_W180|S-CONF": {
+    "COAST": 0.25763358778625955,
+    "EAST": 0.1135057471264368,
+    "FWEST": 0.14862385321100913,
+    "NORTH": 0.0692695214105793,
+    "NCENT": 0.1573948439620081,
+    "SOUTH": 0.24493554327808464,
+    "SCENT": 0.24542682926829273,
+    "WEST": 0.26109215017064846,
+    "ERCOT": 0.20937499999999998
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8201438848920863,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5714285714285714,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5836734693877551,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7318007662835249,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7468553459119497,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8117647058823529,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.625531914893617,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6013289036544851,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.6666666666666666,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7049608355091384,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8697916666666666,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.610204081632653,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.841726618705036,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6885245901639344,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6819484240687679,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8047538200339559,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7395833333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8026315789473685,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.621031746031746,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5306799336650083,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7769784172661871,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5965346534653465,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.4484732824427481,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7702702702702703,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5958904109589042,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5817843866171004,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.675,
+     "median_width_pct": 14.370611359152463,
+     "mean_IS_pct": 61.09364028987395
+    },
+    "mild": {
+     "coverage": 0.8952666611882653,
+     "median_width_pct": 12.18894900117833,
+     "mean_IS_pct": 17.61226712768849
+    },
+    "hot": {
+     "coverage": 0.9954545454545455,
+     "median_width_pct": 23.0388284214031,
+     "mean_IS_pct": 22.798985694647403
+    },
+    "ALL": {
+     "coverage": 0.8949349760438056,
+     "median_width_pct": 12.54503179812551,
+     "mean_IS_pct": 18.930791248617247
+    }
+   }
+  },
+  "n_rows": {
+   "W180|S-CONF": 473148,
+   "W180|GUARDED": 473148
+  }
+ },
+ "nmin50": {
+  "GUARDED": {
+   "cells_pass": 41,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8551020408163266,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8660493827160494,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8659574468085106,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8024691358024691,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8537859007832899,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.789795918367347,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8653295128939829,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.875,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8474295190713101,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8327137546468402,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.878125,
+     "median_width_pct": 30.479362479566856,
+     "mean_IS_pct": 59.3278832018981
+    },
+    "mild": {
+     "coverage": 0.894321636946339,
+     "median_width_pct": 12.377575355746497,
+     "mean_IS_pct": 17.363480519359108
+    },
+    "hot": {
+     "coverage": 0.9371212121212121,
+     "median_width_pct": 11.76979353458805,
+     "mean_IS_pct": 14.223269510946759
+    },
+    "ALL": {
+     "coverage": 0.8960757472051106,
+     "median_width_pct": 12.436399961387407,
+     "mean_IS_pct": 18.227125632512983
+    }
+   },
+   "mild_width_ratio_1_24_vs_nmin50|S-CONF": {
+    "COAST": 0.9894904859378486,
+    "EAST": 1.0034850480346869,
+    "FWEST": 0.9761900429998621,
+    "NORTH": 0.9976284063538996,
+    "NCENT": 0.9936345835700087,
+    "SOUTH": 1.0051140395388753,
+    "SCENT": 0.9989675421966661,
+    "WEST": 1.0022969712298098,
+    "ERCOT": 1.0019203817246554
+   },
+   "cold_gain_1_24_vs_nmin50|S-CONF": {
+    "COAST": 0.2538167938931297,
+    "EAST": 0.08764367816091956,
+    "FWEST": 0.12844036697247707,
+    "NORTH": 0.04534005037783373,
+    "NCENT": 0.12890094979647226,
+    "SOUTH": 0.17495395948434622,
+    "SCENT": 0.19054878048780488,
+    "WEST": 0.20307167235494883,
+    "ERCOT": 0.13437500000000002
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5792207792207792,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6061224489795919,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7624521072796935,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7657232704402516,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8529411764705882,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7042553191489361,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6710963455149501,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7098765432098766,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7101827676240209,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8666666666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6448979591836734,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8191161356628982,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7431693989071039,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7335243553008596,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.830220713073005,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7552083333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8486842105263158,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6845238095238095,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5953565505804311,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6732673267326733,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5114503816793893,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6552511415525114,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6505576208178439,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243
+    },
+    "mild": {
+     "coverage": 0.8922672364204125,
+     "median_width_pct": 12.353851245585364,
+     "mean_IS_pct": 17.42995932474099
+    },
+    "hot": {
+     "coverage": 0.9848484848484849,
+     "median_width_pct": 18.81946498257456,
+     "mean_IS_pct": 18.572244195837364
+    },
+    "ALL": {
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832
+    }
+   }
+  },
+  "n_rows": {
+   "nmin50|S-CONF": 473148,
+   "nmin50|GUARDED": 473148
+  }
+ },
+ "nmin200": {
+  "GUARDED": {
+   "cells_pass": 43,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8571428571428571,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8740740740740741,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8739583333333333,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8714285714285714,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8674203494347379,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8653295128939829,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.875,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8474295190713101,
+     "floor": 0.8755661111287389
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.90625,
+     "median_width_pct": 31.612897571093157,
+     "mean_IS_pct": 49.59909488287885
+    },
+    "mild": {
+     "coverage": 0.894321636946339,
+     "median_width_pct": 12.377575355746497,
+     "mean_IS_pct": 17.363480519359108
+    },
+    "hot": {
+     "coverage": 0.9416666666666667,
+     "median_width_pct": 12.305487927380435,
+     "mean_IS_pct": 14.409893075542643
+    },
+    "ALL": {
+     "coverage": 0.8969883641341547,
+     "median_width_pct": 12.501147484857206,
+     "mean_IS_pct": 17.99972881834819
+    }
+   },
+   "mild_width_ratio_1_24_vs_nmin200|S-CONF": {
+    "COAST": 0.9894904859378486,
+    "EAST": 1.0034850480346869,
+    "FWEST": 0.9761900429998621,
+    "NORTH": 0.9976284063538996,
+    "NCENT": 0.9936345835700087,
+    "SOUTH": 1.0051140395388753,
+    "SCENT": 0.9989675421966661,
+    "WEST": 1.0022969712298098,
+    "ERCOT": 1.0019203817246554
+   },
+   "cold_gain_1_24_vs_nmin200|S-CONF": {
+    "COAST": 0.26717557251908397,
+    "EAST": 0.09195402298850575,
+    "FWEST": 0.1614678899082569,
+    "NORTH": 0.04785894206549113,
+    "NCENT": 0.11668928086838537,
+    "SOUTH": 0.18600368324125238,
+    "SCENT": 0.18445121951219512,
+    "WEST": 0.20819112627986347,
+    "ERCOT": 0.16249999999999998
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5792207792207792,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6061224489795919,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7624521072796935,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7657232704402516,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8529411764705882,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7042553191489361,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6710963455149501,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7098765432098766,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7101827676240209,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8666666666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6448979591836734,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8191161356628982,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7431693989071039,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7335243553008596,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.830220713073005,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7552083333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8486842105263158,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6845238095238095,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5953565505804311,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6732673267326733,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5114503816793893,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6552511415525114,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6505576208178439,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243
+    },
+    "mild": {
+     "coverage": 0.8922672364204125,
+     "median_width_pct": 12.353851245585364,
+     "mean_IS_pct": 17.42995932474099
+    },
+    "hot": {
+     "coverage": 0.9848484848484849,
+     "median_width_pct": 18.81946498257456,
+     "mean_IS_pct": 18.572244195837364
+    },
+    "ALL": {
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832
+    }
+   }
+  },
+  "n_rows": {
+   "nmin200|S-CONF": 473148,
+   "nmin200|GUARDED": 473148
+  }
+ },
+ "bins p10/p90 (calibration)": {
+  "GUARDED": {
+   "cells_pass": 36,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8623376623376623,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7857142857142857,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8710691823899371,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.813953488372093,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7592592592592593,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8407310704960835,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8760416666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.763265306122449,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8715313463514902,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.83810888252149,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8439024390243902,
+     "floor": 0.8580941822538253
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8528645833333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8291873963515755,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8454198473282443,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8605947955390335,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.9,
+     "median_width_pct": 31.97743383631151,
+     "mean_IS_pct": 52.94241434812233
+    },
+    "mild": {
+     "coverage": 0.8951844851672282,
+     "median_width_pct": 12.27978447090046,
+     "mean_IS_pct": 17.318655531346863
+    },
+    "hot": {
+     "coverage": 0.9492424242424242,
+     "median_width_pct": 12.818391327099759,
+     "mean_IS_pct": 14.62209887707048
+    },
+    "ALL": {
+     "coverage": 0.8980150581793293,
+     "median_width_pct": 12.456002891218771,
+     "mean_IS_pct": 18.050260629038377
+    }
+   },
+   "mild_width_ratio_1_24_vs_bins p10/p90 (calibration)|S-CONF": {
+    "COAST": 0.9784690681508024,
+    "EAST": 0.9960929116457445,
+    "FWEST": 0.9667624448898141,
+    "NORTH": 0.9902623107176725,
+    "NCENT": 0.989242721995979,
+    "SOUTH": 0.9938368499922472,
+    "SCENT": 0.9869073854099429,
+    "WEST": 0.9902953328248135,
+    "ERCOT": 0.9940045599374225
+   },
+   "cold_gain_1_24_vs_bins p10/p90 (calibration)|S-CONF": {
+    "COAST": 0.22137404580152675,
+    "EAST": 0.08908045977011492,
+    "FWEST": 0.10642201834862386,
+    "NORTH": 0.021410579345088165,
+    "NCENT": 0.11261872455902311,
+    "SOUTH": 0.16022099447513816,
+    "SCENT": 0.19664634146341464,
+    "WEST": 0.20989761092150172,
+    "ERCOT": 0.15625
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5792207792207792,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6061224489795919,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7624521072796935,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7657232704402516,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8529411764705882,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7042553191489361,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6710963455149501,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7098765432098766,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7101827676240209,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8666666666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6448979591836734,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8191161356628982,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7431693989071039,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7335243553008596,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.830220713073005,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7552083333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8486842105263158,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6845238095238095,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5953565505804311,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6732673267326733,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5114503816793893,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6552511415525114,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6505576208178439,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243
+    },
+    "mild": {
+     "coverage": 0.8922672364204125,
+     "median_width_pct": 12.353851245585364,
+     "mean_IS_pct": 17.42995932474099
+    },
+    "hot": {
+     "coverage": 0.9848484848484849,
+     "median_width_pct": 18.81946498257456,
+     "mean_IS_pct": 18.572244195837364
+    },
+    "ALL": {
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832
+    }
+   }
+  },
+  "n_rows": {
+   "bins p10/p90 (calibration)|S-CONF": 473148,
+   "bins p10/p90 (calibration)|GUARDED": 473148
+  }
+ },
+ "oracle bins (observed temperature; not available at issue time)": {
+  "GUARDED": {
+   "cells_pass": 39,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8675324675324675,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8387755102040816,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7530864197530864,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8120104438642297,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.878125,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7795918367346939,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8725590955806783,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8538681948424068,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7993366500829188,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8225190839694656,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8470319634703196,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.828996282527881,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.8984375,
+     "median_width_pct": 34.63362919641263,
+     "mean_IS_pct": 52.953645011816754
+    },
+    "mild": {
+     "coverage": 0.8929657325992275,
+     "median_width_pct": 12.27266495091084,
+     "mean_IS_pct": 17.272013561176298
+    },
+    "hot": {
+     "coverage": 0.946969696969697,
+     "median_width_pct": 11.696177944740636,
+     "mean_IS_pct": 14.248890227448546
+    },
+    "ALL": {
+     "coverage": 0.8958095672674729,
+     "median_width_pct": 12.324903269359636,
+     "mean_IS_pct": 17.988635408004544
+    }
+   },
+   "mild_width_ratio_1_24_vs_oracle bins (observed temperature; not available at issue time)|S-CONF": {
+    "COAST": 0.9834726899173634,
+    "EAST": 0.9884967371827095,
+    "FWEST": 0.9661026593023572,
+    "NORTH": 0.9903831372368934,
+    "NCENT": 0.9899953188462215,
+    "SOUTH": 0.9923170656560768,
+    "SCENT": 0.9917078994401533,
+    "WEST": 0.9999293929745245,
+    "ERCOT": 0.9934282603003225
+   },
+   "cold_gain_1_24_vs_oracle bins (observed temperature; not available at issue time)|S-CONF": {
+    "COAST": 0.22137404580152675,
+    "EAST": 0.09482758620689657,
+    "FWEST": 0.08440366972477065,
+    "NORTH": 0.057934508816120944,
+    "NCENT": 0.13297150610583452,
+    "SOUTH": 0.16206261510128916,
+    "SCENT": 0.1707317073170732,
+    "WEST": 0.16552901023890787,
+    "ERCOT": 0.15468749999999998
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 24,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5792207792207792,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6061224489795919,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7624521072796935,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7657232704402516,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8529411764705882,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7042553191489361,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6710963455149501,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7098765432098766,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7101827676240209,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8666666666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6448979591836734,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8191161356628982,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8404255319148937,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7431693989071039,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7335243553008596,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.830220713073005,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7552083333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8486842105263158,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6845238095238095,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5953565505804311,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8273381294964028,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6732673267326733,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5114503816793893,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7972972972972973,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6552511415525114,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6505576208178439,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.74375,
+     "median_width_pct": 17.17941679790981,
+     "mean_IS_pct": 56.36104456942243
+    },
+    "mild": {
+     "coverage": 0.8922672364204125,
+     "median_width_pct": 12.353851245585364,
+     "mean_IS_pct": 17.42995932474099
+    },
+    "hot": {
+     "coverage": 0.9848484848484849,
+     "median_width_pct": 18.81946498257456,
+     "mean_IS_pct": 18.572244195837364
+    },
+    "ALL": {
+     "coverage": 0.8932998707126018,
+     "median_width_pct": 12.66226031744257,
+     "mean_IS_pct": 18.434739558463832
+    }
+   }
+  },
+  "n_rows": {
+   "oracle bins (observed temperature; not available at issue time)|S-CONF": 473148,
+   "oracle bins (observed temperature; not available at issue time)|GUARDED": 473148
+  },
+  "GUARDED on observed bins": {
+   "cells_pass": 41,
+   "cells_assessable": 52,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8655616942909761,
+     "floor": 0.8742515354746275
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8786491127647396,
+     "floor": 0.8856449470791027
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8558413719185424,
+     "floor": 0.8861102179636945
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8809349890430972,
+     "floor": 0.8837837837837839
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7860082304526749,
+     "floor": 0.861509982054025
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8142201834862385,
+     "floor": 0.8712652114433654
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.833578792341679,
+     "floor": 0.8769741133064
+    },
+    {
+     "series": "NORTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8554216867469879,
+     "floor": 0.8619765449685314
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8567493112947658,
+     "floor": 0.8777319114292439
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8825278810408922,
+     "floor": 0.8836397435055237
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8703358208955224,
+     "floor": 0.8816745833465542
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.8944444444444445,
+     "median_width_pct": 32.936532033099844,
+     "mean_IS_pct": 51.317158483515335
+    },
+    "mild": {
+     "coverage": 0.894543351646082,
+     "median_width_pct": 12.299145159146857,
+     "mean_IS_pct": 17.14275952435044
+    },
+    "hot": {
+     "coverage": 0.918918918918919,
+     "median_width_pct": 11.565441418966953,
+     "mean_IS_pct": 15.418345161849933
+    },
+    "ALL": {
+     "coverage": 0.8958095672674729,
+     "median_width_pct": 12.324903269359636,
+     "mean_IS_pct": 17.988635408004544
+    }
+   },
+   "mild_width_ratio_1_24_vs_oracle bins (observed temperature; not available at issue time)|S-CONF [observed bins]": {
+    "COAST": 0.9813964254292831,
+    "EAST": 0.9915296964711546,
+    "FWEST": 0.964465733549998,
+    "NORTH": 0.9951327396473978,
+    "NCENT": 0.99013625946901,
+    "SOUTH": 0.9975598684887856,
+    "SCENT": 0.9925308760987128,
+    "WEST": 0.9988982246423157,
+    "ERCOT": 0.9956991394798127
+   },
+   "cold_gain_1_24_vs_oracle bins (observed temperature; not available at issue time)|S-CONF [observed bins]": {
+    "COAST": 0.2596685082872928,
+    "EAST": 0.12548015364916765,
+    "FWEST": 0.08689248895434465,
+    "NORTH": 0.06833712984054663,
+    "NCENT": 0.16405307599517494,
+    "SOUTH": 0.23588039867109634,
+    "SCENT": 0.21349862258953167,
+    "WEST": 0.19604863221884494,
+    "ERCOT": 0.17222222222222228
+   }
+  }
+ },
+ "alpha0.05": {
+  "GUARDED": {
+   "cells_pass": 39,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.9081632653061225,
+     "floor": 0.9303085017827282
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.9276729559748428,
+     "floor": 0.9327158414041996
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.921604938271605,
+     "floor": 0.9391702285057678
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8827160493827161,
+     "floor": 0.9157532555390612
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8929503916449086,
+     "floor": 0.9277270668542772
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.9354166666666667,
+     "floor": 0.9359317141532215
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8571428571428571,
+     "floor": 0.9303085017827282
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.9226361031518625,
+     "floor": 0.9335013241826827
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.9305555555555556,
+     "floor": 0.9305839209163094
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.9104477611940298,
+     "floor": 0.932249191268745
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.9084158415841584,
+     "floor": 0.92831366721405
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.9107806691449815,
+     "floor": 0.9312074522402864
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.95,
+     "median_width_pct": 46.23028728378542,
+     "mean_IS_pct": 59.68003622096716
+    },
+    "mild": {
+     "coverage": 0.9439970416632427,
+     "median_width_pct": 15.572755033519856,
+     "mean_IS_pct": 18.280281738211904
+    },
+    "hot": {
+     "coverage": 0.9734848484848485,
+     "median_width_pct": 14.908347984702328,
+     "mean_IS_pct": 16.760088609824685
+    },
+    "ALL": {
+     "coverage": 0.9456232413111263,
+     "median_width_pct": 15.671669646614719,
+     "mean_IS_pct": 19.21150038371697
+    }
+   },
+   "mild_width_ratio_1_24_vs_alpha0.05|S-CONF": {
+    "COAST": 0.9896375342710031,
+    "EAST": 0.9993539328862264,
+    "FWEST": 0.9822774152506427,
+    "NORTH": 1.0022984343127737,
+    "NCENT": 0.9865408853112252,
+    "SOUTH": 1.0043750059238896,
+    "SCENT": 0.9884862105346368,
+    "WEST": 1.0003308976151564,
+    "ERCOT": 0.9952495728053053
+   },
+   "cold_gain_1_24_vs_alpha0.05|S-CONF": {
+    "COAST": 0.18511450381679395,
+    "EAST": 0.07327586206896552,
+    "FWEST": 0.09541284403669725,
+    "NORTH": 0.041561712846347576,
+    "NCENT": 0.11126187245590236,
+    "SOUTH": 0.11970534069981587,
+    "SCENT": 0.11128048780487809,
+    "WEST": 0.16894197952218437,
+    "ERCOT": 0.10781249999999998
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 26,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8561151079136691,
+     "floor": 0.9130283017049508
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7376623376623377,
+     "floor": 0.9277849939566406
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6612244897959184,
+     "floor": 0.9303085017827282
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8352490421455939,
+     "floor": 0.9309216176175886
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8380503144654088,
+     "floor": 0.9327158414041996
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8085106382978723,
+     "floor": 0.9298938984596979
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7441860465116279,
+     "floor": 0.9322344541896344
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8333333333333334,
+     "floor": 0.9157532555390612
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7780678851174935,
+     "floor": 0.9277270668542772
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.928125,
+     "floor": 0.9359317141532215
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7163265306122449,
+     "floor": 0.9303085017827282
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.895169578622816,
+     "floor": 0.9360260115376555
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8936170212765957,
+     "floor": 0.9182094621330129
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.819672131147541,
+     "floor": 0.9313966726442084
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7865329512893983,
+     "floor": 0.9335013241826827
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8879456706281834,
+     "floor": 0.9320394697973224
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8372395833333334,
+     "floor": 0.9342711782598525
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7956349206349206,
+     "floor": 0.9305839209163094
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6915422885572139,
+     "floor": 0.932249191268745
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8776978417266187,
+     "floor": 0.9130283017049508
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7623762376237624,
+     "floor": 0.92831366721405
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6526717557251909,
+     "floor": 0.930958061552265
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8783783783783784,
+     "floor": 0.914170071395776
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7579908675799086,
+     "floor": 0.9291723752113232
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.7509293680297398,
+     "floor": 0.9312074522402864
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.8421875,
+     "median_width_pct": 22.16881106027609,
+     "mean_IS_pct": 51.662597225502935
+    },
+    "mild": {
+     "coverage": 0.9439148656422056,
+     "median_width_pct": 15.647085373395342,
+     "mean_IS_pct": 18.349667170535508
+    },
+    "hot": {
+     "coverage": 0.9992424242424243,
+     "median_width_pct": 23.9469026933712,
+     "mean_IS_pct": 23.661599665611497
+    },
+    "ALL": {
+     "coverage": 0.9442162902121835,
+     "median_width_pct": 16.025327292797808,
+     "mean_IS_pct": 19.42701244883346
+    }
+   }
+  },
+  "n_rows": {
+   "alpha0.05|S-CONF": 473148,
+   "alpha0.05|GUARDED": 473148
+  }
+ },
+ "sigma score": {
+  "GUARDED": {
+   "cells_pass": 30,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8489208633093526,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8285714285714286,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8204081632653061,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8601532567049809,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8553459119496856,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8549382716049383,
+     "floor": 0.8850928801500014
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.825531914893617,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8239202657807309,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7716049382716049,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7650130548302873,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.773469387755102,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8735868448098664,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8542805100182149,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8166189111747851,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.824390243902439,
+     "floor": 0.8580941822538253
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8590831918505942,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8294270833333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8630952380952381,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8208955223880597,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.8465346534653465,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8327137546468402,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.8390625,
+     "median_width_pct": 29.306780934148158,
+     "mean_IS_pct": 54.289076721990845
+    },
+    "mild": {
+     "coverage": 0.8953077491987838,
+     "median_width_pct": 13.459284228621929,
+     "mean_IS_pct": 17.658790805867707
+    },
+    "hot": {
+     "coverage": 0.9356060606060606,
+     "median_width_pct": 11.404991050069068,
+     "mean_IS_pct": 14.013411965144327
+    },
+    "ALL": {
+     "coverage": 0.8959616700889802,
+     "median_width_pct": 13.399442461856689,
+     "mean_IS_pct": 18.367266085986497
+    }
+   },
+   "mild_width_ratio_1_24_vs_sigma score|S-CONF": {
+    "COAST": 0.9681637063789493,
+    "EAST": 0.9702218281828768,
+    "FWEST": 0.9758058144148348,
+    "NORTH": 0.9918568429356923,
+    "NCENT": 0.9599594598151857,
+    "SOUTH": 1.0066223707068722,
+    "SCENT": 0.9744874830532279,
+    "WEST": 0.9728035068847141,
+    "ERCOT": 0.9945386125967915
+   },
+   "cold_gain_1_24_vs_sigma score|S-CONF": {
+    "COAST": 0.24809160305343514,
+    "EAST": 0.1724137931034483,
+    "FWEST": 0.06422018348623859,
+    "NORTH": 0.09949622166246852,
+    "NCENT": 0.24423337856173677,
+    "SOUTH": 0.22099447513812165,
+    "SCENT": 0.2682926829268293,
+    "WEST": 0.31399317406143346,
+    "ERCOT": 0.19843750000000004
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 21,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7338129496402878,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "hot",
+     "coverage": 0.8537735849056604,
+     "floor": 0.8587918308153933
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5324675324675324,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5469387755102041,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8045977011494253,
+     "floor": 0.8545141173852658
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6475095785440613,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6257861635220126,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7352941176470589,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6063829787234043,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5963455149501661,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7037037037037037,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7023498694516971,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "hot",
+     "coverage": 0.8447916666666667,
+     "floor": 0.8806350832689629
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6163265306122448,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.7882836587872559,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.6968085106382979,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5938069216757741,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6346704871060171,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8,
+     "floor": 0.8580941822538253
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.733446519524618,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6888020833333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.6710526315789473,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5773809523809523,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.49087893864013266,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7338129496402878,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.594059405940594,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.4637404580152672,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.6756756756756757,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5365296803652968,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5650557620817844,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.640625,
+     "median_width_pct": 13.824223729294829,
+     "mean_IS_pct": 65.68622671756704
+    },
+    "mild": {
+     "coverage": 0.8989234941244145,
+     "median_width_pct": 13.533194245197825,
+     "mean_IS_pct": 17.683945456351083
+    },
+    "hot": {
+     "coverage": 0.956060606060606,
+     "median_width_pct": 13.335507107278953,
+     "mean_IS_pct": 14.522358197465735
+    },
+    "ALL": {
+     "coverage": 0.8955053616244582,
+     "median_width_pct": 13.510638915322215,
+     "mean_IS_pct": 18.69345815029927
+    }
+   }
+  },
+  "n_rows": {
+   "sigma score|S-CONF": 473148,
+   "sigma score|GUARDED": 473148
+  }
+ },
+ "univariate Chronos-2": {
+  "GUARDED": {
+   "cells_pass": 47,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.863265306122449,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8395061728395061,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "NORTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8439024390243902,
+     "floor": 0.8580941822538253
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.8568702290076335,
+     "floor": 0.8737888783001689
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.9171875,
+     "median_width_pct": 73.12343707545584,
+     "mean_IS_pct": 88.06432183502298
+    },
+    "mild": {
+     "coverage": 0.8981017339140439,
+     "median_width_pct": 18.70956787458527,
+     "mean_IS_pct": 25.996623368283554
+    },
+    "hot": {
+     "coverage": 0.9462121212121212,
+     "median_width_pct": 20.12926528080758,
+     "mean_IS_pct": 22.164715663354702
+    },
+    "ALL": {
+     "coverage": 0.9009810631987223,
+     "median_width_pct": 18.927717599014507,
+     "mean_IS_pct": 27.31479238677193
+    }
+   },
+   "mild_width_ratio_1_24_vs_univariate Chronos-2|S-CONF": {
+    "COAST": 0.9948190070787442,
+    "EAST": 1.0191351195006468,
+    "FWEST": 0.9806198686126586,
+    "NORTH": 0.986349969746535,
+    "NCENT": 0.9917409005087184,
+    "SOUTH": 1.011733953418866,
+    "SCENT": 0.9998085393618636,
+    "WEST": 1.0163006680125437,
+    "ERCOT": 1.0002802724398316
+   },
+   "cold_gain_1_24_vs_univariate Chronos-2|S-CONF": {
+    "COAST": 0.2137404580152671,
+    "EAST": 0.20545977011494254,
+    "FWEST": 0.11743119266055047,
+    "NORTH": 0.17632241813602012,
+    "NCENT": 0.22116689280868385,
+    "SOUTH": 0.28176795580110503,
+    "SCENT": 0.21036585365853655,
+    "WEST": 0.2798634812286689,
+    "ERCOT": 0.265625
+   }
+  },
+  "S-CONF": {
+   "cells_pass": 25,
+   "cells_assessable": 51,
+   "failing": [
+    {
+     "series": "COAST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7985611510791367,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "COAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6233766233766234,
+     "floor": 0.8694211685137425
+    },
+    {
+     "series": "COAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.4775510204081633,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "EAST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.632183908045977,
+     "floor": 0.8737387134280555
+    },
+    {
+     "series": "EAST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.4528301886792453,
+     "floor": 0.8762084524284557
+    },
+    {
+     "series": "ERCOT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8176470588235294,
+     "floor": 0.8539821006691578
+    },
+    {
+     "series": "ERCOT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5914893617021276,
+     "floor": 0.8723240637591335
+    },
+    {
+     "series": "ERCOT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.41362126245847175,
+     "floor": 0.8755458256218234
+    },
+    {
+     "series": "FWEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7530864197530864,
+     "floor": 0.8528595479208969
+    },
+    {
+     "series": "FWEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.7806788511749347,
+     "floor": 0.8693414321815442
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.6653061224489796,
+     "floor": 0.8728947629128425
+    },
+    {
+     "series": "FWEST",
+     "band": "25-48",
+     "bin": "hot",
+     "coverage": 0.8663926002055499,
+     "floor": 0.880764883090875
+    },
+    {
+     "series": "NCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7925531914893617,
+     "floor": 0.8562405025506317
+    },
+    {
+     "series": "NCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6539162112932605,
+     "floor": 0.8743926240134208
+    },
+    {
+     "series": "NCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.44412607449856734,
+     "floor": 0.8772896650768661
+    },
+    {
+     "series": "NORTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.66723259762309,
+     "floor": 0.8752774306970902
+    },
+    {
+     "series": "NORTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.5286458333333334,
+     "floor": 0.8783493649053891
+    },
+    {
+     "series": "SCENT",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.8223684210526315,
+     "floor": 0.8513335736607712
+    },
+    {
+     "series": "SCENT",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6428571428571429,
+     "floor": 0.8732738758087576
+    },
+    {
+     "series": "SCENT",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.472636815920398,
+     "floor": 0.8755661111287389
+    },
+    {
+     "series": "SOUTH",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.762589928057554,
+     "floor": 0.8491086642192017
+    },
+    {
+     "series": "SOUTH",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.5643564356435643,
+     "floor": 0.8701488842937003
+    },
+    {
+     "series": "SOUTH",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.3511450381679389,
+     "floor": 0.8737888783001689
+    },
+    {
+     "series": "WEST",
+     "band": "1-6",
+     "bin": "cold",
+     "coverage": 0.7837837837837838,
+     "floor": 0.8506803038083929
+    },
+    {
+     "series": "WEST",
+     "band": "7-24",
+     "bin": "cold",
+     "coverage": 0.6073059360730594,
+     "floor": 0.8713308910459502
+    },
+    {
+     "series": "WEST",
+     "band": "25-48",
+     "bin": "cold",
+     "coverage": 0.4107806691449814,
+     "floor": 0.8741321631864464
+    }
+   ],
+   "ERCOT_1_24": {
+    "cold": {
+     "coverage": 0.6515625,
+     "median_width_pct": 22.59920200492841,
+     "mean_IS_pct": 108.0107011394983
+    },
+    "mild": {
+     "coverage": 0.8992932862190812,
+     "median_width_pct": 18.70432556762303,
+     "mean_IS_pct": 26.116024396371966
+    },
+    "hot": {
+     "coverage": 0.9840909090909091,
+     "median_width_pct": 30.996445067713292,
+     "mean_IS_pct": 30.163445667449523
+    },
+    "ALL": {
+     "coverage": 0.8975207240094304,
+     "median_width_pct": 19.248362170930967,
+     "mean_IS_pct": 28.31220620462443
+    }
+   }
+  },
+  "n_rows": {
+   "univariate Chronos-2|S-CONF": 473148,
+   "univariate Chronos-2|GUARDED": 473148
+  }
+ },
+ "sub-bins p1/p99 (main design intervals)": [
+  {
+   "series": "COAST",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 36,
+   "coverage": 0.9444444444444444,
+   "floor": 0.8,
+   "status": "pass",
+   "median_width_pct": 16.24839460995758
+  },
+  {
+   "series": "COAST",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 37,
+   "coverage": 0.8648648648648649,
+   "floor": 0.8013606076167856,
+   "status": "pass",
+   "median_width_pct": 11.07725767822296
+  },
+  {
+   "series": "COAST",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 102,
+   "coverage": 0.8725490196078431,
+   "floor": 0.8405911474213996,
+   "status": "pass",
+   "median_width_pct": 38.00993090129872
+  },
+  {
+   "series": "COAST",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 672,
+   "coverage": 0.9449404761904762,
+   "floor": 0.8768544975056862,
+   "status": "pass",
+   "median_width_pct": 14.269735310388631
+  },
+  {
+   "series": "COAST",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 119,
+   "coverage": 0.680672268907563,
+   "floor": 0.8449980901783074,
+   "status": "fail",
+   "median_width_pct": 50.46433946255898
+  },
+  {
+   "series": "COAST",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 672,
+   "coverage": 0.9479166666666666,
+   "floor": 0.8768544975056862,
+   "status": "pass",
+   "median_width_pct": 18.6418838424669
+  },
+  {
+   "series": "COAST",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 138,
+   "coverage": 0.8913043478260869,
+   "floor": 0.8489246081544751,
+   "status": "pass",
+   "median_width_pct": 35.243763403718056
+  },
+  {
+   "series": "COAST",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 709,
+   "coverage": 0.9407616361071932,
+   "floor": 0.8774665270143396,
+   "status": "pass",
+   "median_width_pct": 14.10354186770145
+  },
+  {
+   "series": "EAST",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 52,
+   "coverage": 0.9230769230769231,
+   "floor": 0.8167949705662156,
+   "status": "pass",
+   "median_width_pct": 20.03268597001365
+  },
+  {
+   "series": "EAST",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 28,
+   "coverage": 0.8214285714285714,
+   "floor": 0.7866106580972319,
+   "status": "pass",
+   "median_width_pct": 12.319455048874554
+  },
+  {
+   "series": "EAST",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 148,
+   "coverage": 0.8986486486486487,
+   "floor": 0.8506803038083929,
+   "status": "pass",
+   "median_width_pct": 57.17887160540217
+  },
+  {
+   "series": "EAST",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 878,
+   "coverage": 0.9316628701594533,
+   "floor": 0.8797509807881152,
+   "status": "pass",
+   "median_width_pct": 21.27790105407511
+  },
+  {
+   "series": "EAST",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 188,
+   "coverage": 0.9148936170212766,
+   "floor": 0.8562405025506317,
+   "status": "pass",
+   "median_width_pct": 80.19318994585326
+  },
+  {
+   "series": "EAST",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 894,
+   "coverage": 0.8948545861297539,
+   "floor": 0.8799329981372805,
+   "status": "pass",
+   "median_width_pct": 24.70374708697724
+  },
+  {
+   "series": "EAST",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 200,
+   "coverage": 0.905,
+   "floor": 0.8575735931288072,
+   "status": "pass",
+   "median_width_pct": 55.24227273652402
+  },
+  {
+   "series": "EAST",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 906,
+   "coverage": 0.9282560706401766,
+   "floor": 0.8800663351744472,
+   "status": "pass",
+   "median_width_pct": 21.221640163187445
+  },
+  {
+   "series": "ERCOT",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 50,
+   "coverage": 0.96,
+   "floor": 0.8151471862576143,
+   "status": "pass",
+   "median_width_pct": 14.813098481987472
+  },
+  {
+   "series": "ERCOT",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 2,
+   "coverage": 1.0,
+   "floor": 0.4757359312880715,
+   "status": "unassessable",
+   "median_width_pct": 11.010067623740825
+  },
+  {
+   "series": "ERCOT",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 130,
+   "coverage": 0.8846153846153846,
+   "floor": 0.8473765188415783,
+   "status": "pass",
+   "median_width_pct": 36.75558977858738
+  },
+  {
+   "series": "ERCOT",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 532,
+   "coverage": 0.9868421052631579,
+   "floor": 0.8739867009142764,
+   "status": "pass",
+   "median_width_pct": 11.94901573099937
+  },
+  {
+   "series": "ERCOT",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 160,
+   "coverage": 0.775,
+   "floor": 0.8525658350974743,
+   "status": "fail",
+   "median_width_pct": 68.88149597962743
+  },
+  {
+   "series": "ERCOT",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 499,
+   "coverage": 0.935871743486974,
+   "floor": 0.8731403111378493,
+   "status": "pass",
+   "median_width_pct": 13.71990282120972
+  },
+  {
+   "series": "ERCOT",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 180,
+   "coverage": 0.9055555555555556,
+   "floor": 0.8552786404500042,
+   "status": "pass",
+   "median_width_pct": 34.82835902015463
+  },
+  {
+   "series": "ERCOT",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 534,
+   "coverage": 0.9868913857677902,
+   "floor": 0.8740354606555251,
+   "status": "pass",
+   "median_width_pct": 11.945999144036799
+  },
+  {
+   "series": "FWEST",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 75,
+   "coverage": 0.8133333333333334,
+   "floor": 0.8307179676972449,
+   "status": "fail",
+   "median_width_pct": 15.323095326135117
+  },
+  {
+   "series": "FWEST",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 1,
+   "coverage": 1.0,
+   "floor": 0.30000000000000004,
+   "status": "unassessable",
+   "median_width_pct": 11.401376293394053
+  },
+  {
+   "series": "FWEST",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 141,
+   "coverage": 0.6950354609929078,
+   "floor": 0.8494708847360088,
+   "status": "fail",
+   "median_width_pct": 21.413678358996886
+  },
+  {
+   "series": "FWEST",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 286,
+   "coverage": 0.8706293706293706,
+   "floor": 0.864521256240655,
+   "status": "pass",
+   "median_width_pct": 15.76763898171528
+  },
+  {
+   "series": "FWEST",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 178,
+   "coverage": 0.6629213483146067,
+   "floor": 0.8550280986602483,
+   "status": "fail",
+   "median_width_pct": 26.763680407729808
+  },
+  {
+   "series": "FWEST",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 288,
+   "coverage": 0.8506944444444444,
+   "floor": 0.8646446609406726,
+   "status": "fail",
+   "median_width_pct": 19.116123110749474
+  },
+  {
+   "series": "FWEST",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 216,
+   "coverage": 0.7361111111111112,
+   "floor": 0.8591751709536137,
+   "status": "fail",
+   "median_width_pct": 18.825734205548354
+  },
+  {
+   "series": "FWEST",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 287,
+   "coverage": 0.8710801393728222,
+   "floor": 0.8645831198339426,
+   "status": "pass",
+   "median_width_pct": 15.761389545083905
+  },
+  {
+   "series": "NCENT",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 64,
+   "coverage": 0.9375,
+   "floor": 0.8250000000000001,
+   "status": "pass",
+   "median_width_pct": 25.52342998966685
+  },
+  {
+   "series": "NCENT",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 8,
+   "coverage": 1.0,
+   "floor": 0.6878679656440357,
+   "status": "unassessable",
+   "median_width_pct": 12.870960449953591
+  },
+  {
+   "series": "NCENT",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 202,
+   "coverage": 0.8366336633663366,
+   "floor": 0.8577841473161825,
+   "status": "fail",
+   "median_width_pct": 48.13150968315585
+  },
+  {
+   "series": "NCENT",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 538,
+   "coverage": 0.9869888475836431,
+   "floor": 0.8741321631864464,
+   "status": "pass",
+   "median_width_pct": 19.252579628606085
+  },
+  {
+   "series": "NCENT",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 244,
+   "coverage": 0.7049180327868853,
+   "floor": 0.8615889360201312,
+   "status": "fail",
+   "median_width_pct": 93.4310006826586
+  },
+  {
+   "series": "NCENT",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 494,
+   "coverage": 0.9574898785425101,
+   "floor": 0.8730047237600491,
+   "status": "pass",
+   "median_width_pct": 22.876647439946098
+  },
+  {
+   "series": "NCENT",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 266,
+   "coverage": 0.8609022556390977,
+   "floor": 0.8632116396309021,
+   "status": "fail",
+   "median_width_pct": 44.184309921707545
+  },
+  {
+   "series": "NCENT",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 546,
+   "coverage": 0.9871794871794872,
+   "floor": 0.8743223704493452,
+   "status": "pass",
+   "median_width_pct": 19.222628993620468
+  },
+  {
+   "series": "NORTH",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 76,
+   "coverage": 0.8157894736842105,
+   "floor": 0.8311752798388314,
+   "status": "fail",
+   "median_width_pct": 25.933699080330236
+  },
+  {
+   "series": "NORTH",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 12,
+   "coverage": 1.0,
+   "floor": 0.7267949192431122,
+   "status": "unassessable",
+   "median_width_pct": 13.834882474465852
+  },
+  {
+   "series": "NORTH",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 237,
+   "coverage": 0.8016877637130801,
+   "floor": 0.8610258118523022,
+   "status": "fail",
+   "median_width_pct": 56.11526170355432
+  },
+  {
+   "series": "NORTH",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 513,
+   "coverage": 0.9785575048732943,
+   "floor": 0.8735093528586991,
+   "status": "pass",
+   "median_width_pct": 24.81810180474113
+  },
+  {
+   "series": "NORTH",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 299,
+   "coverage": 0.7692307692307693,
+   "floor": 0.8653011040820257,
+   "status": "fail",
+   "median_width_pct": 73.8474225441969
+  },
+  {
+   "series": "NORTH",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 449,
+   "coverage": 0.9665924276169265,
+   "floor": 0.8716842493090196,
+   "status": "pass",
+   "median_width_pct": 33.09124534400665
+  },
+  {
+   "series": "NORTH",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 313,
+   "coverage": 0.805111821086262,
+   "floor": 0.8660859948633467,
+   "status": "fail",
+   "median_width_pct": 54.48687449031788
+  },
+  {
+   "series": "NORTH",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 525,
+   "coverage": 0.979047619047619,
+   "floor": 0.8738138531716809,
+   "status": "pass",
+   "median_width_pct": 24.81810180474113
+  },
+  {
+   "series": "SCENT",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 47,
+   "coverage": 0.9361702127659575,
+   "floor": 0.8124810051012633,
+   "status": "pass",
+   "median_width_pct": 27.095725290129995
+  },
+  {
+   "series": "SCENT",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 0,
+   "coverage": NaN,
+   "floor": NaN,
+   "status": "empty",
+   "median_width_pct": NaN
+  },
+  {
+   "series": "SCENT",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 123,
+   "coverage": 0.9024390243902439,
+   "floor": 0.845899821919954,
+   "status": "pass",
+   "median_width_pct": 60.2448213003952
+  },
+  {
+   "series": "SCENT",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 589,
+   "coverage": 0.9286926994906621,
+   "floor": 0.8752774306970902,
+   "status": "pass",
+   "median_width_pct": 20.996556906031678
+  },
+  {
+   "series": "SCENT",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 139,
+   "coverage": 0.5971223021582733,
+   "floor": 0.8491086642192017,
+   "status": "fail",
+   "median_width_pct": 79.0440272489102
+  },
+  {
+   "series": "SCENT",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 575,
+   "coverage": 0.9217391304347826,
+   "floor": 0.874978270313151,
+   "status": "pass",
+   "median_width_pct": 23.450497343760407
+  },
+  {
+   "series": "SCENT",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 170,
+   "coverage": 0.9117647058823529,
+   "floor": 0.8539821006691578,
+   "status": "pass",
+   "median_width_pct": 50.97002892078512
+  },
+  {
+   "series": "SCENT",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 589,
+   "coverage": 0.9286926994906621,
+   "floor": 0.8752774306970902,
+   "status": "pass",
+   "median_width_pct": 20.996556906031678
+  },
+  {
+   "series": "SOUTH",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 38,
+   "coverage": 0.9736842105263158,
+   "floor": 0.8026671473215425,
+   "status": "pass",
+   "median_width_pct": 28.601617677936638
+  },
+  {
+   "series": "SOUTH",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 1,
+   "coverage": 1.0,
+   "floor": 0.30000000000000004,
+   "status": "unassessable",
+   "median_width_pct": 11.155442404066132
+  },
+  {
+   "series": "SOUTH",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 85,
+   "coverage": 0.8941176470588236,
+   "floor": 0.8349208626544031,
+   "status": "pass",
+   "median_width_pct": 77.10052000972541
+  },
+  {
+   "series": "SOUTH",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 288,
+   "coverage": 0.9409722222222222,
+   "floor": 0.8646446609406726,
+   "status": "pass",
+   "median_width_pct": 15.210641323760118
+  },
+  {
+   "series": "SOUTH",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 99,
+   "coverage": 0.7070707070707071,
+   "floor": 0.8396977310844473,
+   "status": "fail",
+   "median_width_pct": 95.1643004373493
+  },
+  {
+   "series": "SOUTH",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 204,
+   "coverage": 0.9117647058823529,
+   "floor": 0.8579915974791598,
+   "status": "pass",
+   "median_width_pct": 17.96633069607856
+  },
+  {
+   "series": "SOUTH",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 123,
+   "coverage": 0.9186991869918699,
+   "floor": 0.845899821919954,
+   "status": "pass",
+   "median_width_pct": 72.38798496308402
+  },
+  {
+   "series": "SOUTH",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 289,
+   "coverage": 0.9411764705882353,
+   "floor": 0.8647058823529412,
+   "status": "pass",
+   "median_width_pct": 15.200517512427211
+  },
+  {
+   "series": "WEST",
+   "band": "1-6",
+   "bin": "cold",
+   "n_hours": 85,
+   "coverage": 0.9058823529411765,
+   "floor": 0.8349208626544031,
+   "status": "pass",
+   "median_width_pct": 17.90967689179951
+  },
+  {
+   "series": "WEST",
+   "band": "1-6",
+   "bin": "hot",
+   "n_hours": 1,
+   "coverage": 1.0,
+   "floor": 0.30000000000000004,
+   "status": "unassessable",
+   "median_width_pct": 9.115602971189968
+  },
+  {
+   "series": "WEST",
+   "band": "7-24",
+   "bin": "cold",
+   "n_hours": 193,
+   "coverage": 0.8497409326424871,
+   "floor": 0.8568110549550784,
+   "status": "fail",
+   "median_width_pct": 39.81637383447051
+  },
+  {
+   "series": "WEST",
+   "band": "7-24",
+   "bin": "hot",
+   "n_hours": 432,
+   "coverage": 0.9606481481481481,
+   "floor": 0.8711324865405188,
+   "status": "pass",
+   "median_width_pct": 13.158450676335606
+  },
+  {
+   "series": "WEST",
+   "band": "25-48",
+   "bin": "cold",
+   "n_hours": 226,
+   "coverage": 0.7654867256637168,
+   "floor": 0.8600885936857356,
+   "status": "fail",
+   "median_width_pct": 48.72064029435315
+  },
+  {
+   "series": "WEST",
+   "band": "25-48",
+   "bin": "hot",
+   "n_hours": 363,
+   "coverage": 0.9944903581267218,
+   "floor": 0.8685081671351114,
+   "status": "pass",
+   "median_width_pct": 18.810475909418827
+  },
+  {
+   "series": "WEST",
+   "band": "1-24",
+   "bin": "cold",
+   "n_hours": 278,
+   "coverage": 0.8669064748201439,
+   "floor": 0.864014391365756,
+   "status": "pass",
+   "median_width_pct": 34.34005606763614
+  },
+  {
+   "series": "WEST",
+   "band": "1-24",
+   "bin": "hot",
+   "n_hours": 433,
+   "coverage": 0.9607390300230947,
+   "floor": 0.8711658401200673,
+   "status": "pass",
+   "median_width_pct": 13.152617518720755
+  }
+ ],
+ "_meta": {
+  "commit": "ab9a4b7",
+  "note": "Q5 sensitivity, descriptive (prereg/Q5.md; execution spec derisk/PREREG.md 'Q5 EXECUTION')",
+  "block_length_7": " reported as ci7_* columns in every cell (no separate run)"
+ }
+}

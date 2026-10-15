@@ -1,0 +1,95 @@
+{
+ "activation_share_of_cold_rows": 0.34480578139114726,
+ "cells_pass": 44,
+ "cells_assessable": 51,
+ "failing": [
+  {
+   "series": "COAST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8714285714285714,
+   "floor": 0.8728947629128425
+  },
+  {
+   "series": "EAST",
+   "band": "25-48",
+   "bin": "hot",
+   "coverage": 0.8691358024691358,
+   "floor": 0.8850928801500014
+  },
+  {
+   "series": "FWEST",
+   "band": "1-6",
+   "bin": "cold",
+   "coverage": 0.8395061728395061,
+   "floor": 0.8528595479208969
+  },
+  {
+   "series": "FWEST",
+   "band": "7-24",
+   "bin": "cold",
+   "coverage": 0.856396866840731,
+   "floor": 0.8693414321815442
+  },
+  {
+   "series": "FWEST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8224489795918367,
+   "floor": 0.8728947629128425
+  },
+  {
+   "series": "SCENT",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8689883913764511,
+   "floor": 0.8755661111287389
+  },
+  {
+   "series": "WEST",
+   "band": "25-48",
+   "bin": "cold",
+   "coverage": 0.8513011152416357,
+   "floor": 0.8741321631864464
+  }
+ ],
+ "improvement_vs_SCONF": {
+  "ERCOT": {
+   "block1": {
+    "diff": 0.1972624798711755,
+    "lo": 0.12555995974536244,
+    "hi": 0.2868153313651634,
+    "lcb95": 0.1333591227468569,
+    "n_undefined": 0,
+    "n_hours": 1242
+   },
+   "block7": {
+    "diff": 0.1972624798711755,
+    "lo": 0.10943167545750719,
+    "hi": 0.29278903248340904,
+    "lcb95": 0.12245410839160839,
+    "n_undefined": 0,
+    "n_hours": 1242
+   }
+  },
+  "8-zone aggregate": {
+   "block1": {
+    "diff": 0.18437118437118438,
+    "lo": 0.15404478240408193,
+    "hi": 0.21774200036979421,
+    "lcb95": 0.15820045596335236,
+    "n_undefined": 0,
+    "n_hours": 9828
+   },
+   "block7": {
+    "diff": 0.18437118437118438,
+    "lo": 0.14912532557537356,
+    "hi": 0.2199722855972856,
+    "lcb95": 0.15459098047999537,
+    "n_undefined": 0,
+    "n_hours": 9828
+   }
+  }
+ },
+ "note": "EXPLORATORY: specified after the test results were seen (A6)"
+}
